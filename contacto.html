@@ -32,53 +32,49 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quibusdam eos ea aliquam! Totam odit, adipisci
       eos deserunt quaerat autem. Possimus quaerat ducimus cumque quasi facilis cum id ut pariatur?</p>
   </main>
-  <form action="" autocomplete="" method="" novalidate enctype="">
+  <form>
     <div>
       <label for="name">nombre: </label>
-      <input id="name" type="text" name="name"><br>
+      <input id="name" type="text" name="name" placeholder="nombre completo" required><br>
 
       <label for="seconname">apellido: </label>
-      <input id="seconname" type="text" name="surname"> <br>
+      <input id="seconname" type="text" name="surname" placeholder="apellido completo" required> <br>
 
       <label for="email">correo: </label>
-      <input id="email" type="email" name="email"><br>
+      <input id="email" type="email" name="email" required><br>
 
-      <label for="telefono">telefono: </label>
-      <input id="telefono" type="number" name="telefono"><br>
+      <label for="cedula">cedula: </label>
+      <input id="cedula" type="number" name="cedula" required><br>
 
-      <input type="submit" value="enviar">
-      <input type="text">
-    </div>
+      <div>
+        <label for="Masculino">Masculino</label>
+        <input type="checkbox" name="genero" id="Masculino"><br>
+        <label for="femenino">Femenino</label>
+        <input type="checkbox" name="genero" id="femenino"><br>
+        <label for="otro">otro</label>
+        <input type="checkbox" name="genero" id="otro"><br>
+      </div>
 
-    <div>
-      <label for="Masculino">Masculino</label>
-      <input type="checkbox" name="genero" id="Masculino"><br>
-      <label for="femenino">Femenino</label>
-      <input type="checkbox" name="genero" id="femenino"><br>
-      <label for="otro">otro</label>
-      <input type="checkbox" name="genero" id="otro"><br>
-    </div>
+      <div>
+        <label for="texto">textarea: </label><br>
+        <textarea name="texto" id="texto" cols="30" rows="10" placeholder="acaba un texto" minlength="8" maxlength="40"
+          required></textarea>
+      </div>
 
-    <div>
-      <label for="texto">textarea: </label><br>
-      <textarea name="texto" id="texto" cols="30" rows="10" placeholder="acaba un texto" minlength="8"
-        maxlength="40"></textarea>
-    </div>
+      <div>
+        <select name="ciudades" id="ciudad" required>
+          <option value="Bucaramanga">Bucaramanga</option>
+          <option value="floridablanca">floridablanca</option>
+          <option value="piedecuesta">piedecuesta</option>
+          <option value="giron">giron</option>
+        </select>
+      </div>
 
-    <div>
-      <select name="ciudades" id="ciudad">ciudad
-        <option value="Bucaramanga">Bucaramanga</option>
-        <option value="floridablanca">floridablanca</option>
-        <option value="piedecuesta">piedecuesta</option>
-        <option value="giron">giron</option>
-      </select>
-    </div>
-
-    <div>
-      <label for="edad">EDAD</label>
-      <input type="date">
-    </div>
-    <button value="submit">enviar</button>
+      <div>
+        <label for="edad">EDAD</label>
+        <input type="date">
+      </div> <br>
+      <button value="submit">enviar</button>
 
   </form>
 
