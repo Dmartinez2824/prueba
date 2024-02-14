@@ -32,23 +32,56 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quibusdam eos ea aliquam! Totam odit, adipisci
       eos deserunt quaerat autem. Possimus quaerat ducimus cumque quasi facilis cum id ut pariatur?</p>
   </main>
-  <form>
-    <label for="name">nombre: </label>
-    <input id="name" type="text" name="name"><br>
- 
-     <label for="seconname">apellido: </label>
-    <input id="seconname" type="text" name="surname"> <br>
- 
-    <label for="email">correo: </label>
-    <input id="email" type="email" name="email"><br>
+  <form action="" autocomplete="" method="" novalidate enctype="">
+    <div>
+      <label for="name">nombre: </label>
+      <input id="name" type="text" name="name"><br>
 
-    <label for="telefono">telefono: </label>
-    <input id="telefono" type="number" name="telefono"><br>
+      <label for="seconname">apellido: </label>
+      <input id="seconname" type="text" name="surname"> <br>
 
-    <input type="submit" value="enviar">
+      <label for="email">correo: </label>
+      <input id="email" type="email" name="email"><br>
+
+      <label for="telefono">telefono: </label>
+      <input id="telefono" type="number" name="telefono"><br>
+
+      <input type="submit" value="enviar">
+      <input type="text">
+    </div>
+
+    <div>
+      <label for="Masculino">Masculino</label>
+      <input type="checkbox" name="genero" id="Masculino"><br>
+      <label for="femenino">Femenino</label>
+      <input type="checkbox" name="genero" id="femenino"><br>
+      <label for="otro">otro</label>
+      <input type="checkbox" name="genero" id="otro"><br>
+    </div>
+
+    <div>
+      <label for="texto">textarea: </label><br>
+      <textarea name="texto" id="texto" cols="30" rows="10" placeholder="acaba un texto" minlength="8"
+        maxlength="40"></textarea>
+    </div>
+
+    <div>
+      <select name="ciudades" id="ciudad">ciudad
+        <option value="Bucaramanga">Bucaramanga</option>
+        <option value="floridablanca">floridablanca</option>
+        <option value="piedecuesta">piedecuesta</option>
+        <option value="giron">giron</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="edad">EDAD</label>
+      <input type="date">
+    </div>
+    <button value="submit">enviar</button>
+
   </form>
-  alo
-  <h4>puede ser </h4>
+
 </body>
 
 </html>
