@@ -47,7 +47,7 @@
     <div>
       <label for="texto">textarea: </label><br>
       <textarea name="texto" id="texto" cols="30" rows="10" placeholder="acaba un texto" minlength="8" maxlength="40"
-        required></textarea>
+        required></textarea required>
     </div>
 
     <div>
@@ -60,23 +60,23 @@
     </div>
     <div>
       <label for="fecha">fecha</label>
-      <input type="date">
+      <input type="date" required>
     </div>
     <hr>
     <div>
-      <input type="radio" name="genero" value="masculino"> masculino<br>
-      <input type="radio" name="genero" value="femenino"> femenino<br>
-      <input type="radio" name="genero" value="otro"> otro
+      <input type="radio" name="genero" value="masculino" required> masculino<br>
+      <input type="radio" name="genero" value="femenino" required> femenino<br>
+      <input type="radio" name="genero" value="otro" required> otro
     </div>
     <hr>
     <div>
-      <label for="imagenes"></label>
-      <input type="file" id="imagenes" name="imagenes" accept="image/*" multiple>
+      <label for="imagenes" ></label>
+      <input type="file" id="imagenes" name="imagenes" accept="image/*" multiple required>
     </div>
 
     <div>
       <label for="hamburguesa">hamburguesa</label>
-      <input type="checkbox" name="comida" id="hamburguesa"><br>
+      <input type="checkbox" name="comida" id="hamburguesa" checked required><br>
       <label for="pizza">pizza</label>
       <input type="checkbox" name="comida" id="pizza"><br>
       <label for="otro">otro</label>
@@ -84,7 +84,6 @@
     </div>
 
     <button value="submit">enviar</button>
-
   </form>
 
 </body>
