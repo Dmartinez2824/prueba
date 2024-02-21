@@ -1,15 +1,38 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-  "version": "0.2.0",
+  "editor.wordWrap": "on",
+  "files.autoSave": "onFocusChange",
+  "window.restoreWindows": "none",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.renderWhitespace": "all",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "tabnine.experimentalAutoImports": true,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "editor.minimap.enabled": false,
+  "window.zoomLevel": 1,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
   "configurations": [
-    
-    {
-      "type": "msedge",
-      "request": "launch",
-      "name": "Open contacto.html",
-      "file": "d:\\dmprueba\\prueba\\contacto.html"
-    }
+  
   ]
 }
