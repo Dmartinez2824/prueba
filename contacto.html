@@ -35,47 +35,55 @@
   <form>
     <div>
       <label for="name">nombre: </label>
-      <input id="name" type="text" name="name" placeholder="nombre completo"><br>
+      <input id="name" type="text" name="name" placeholder="nombre completo" pattern="[A-Za-z]+"><br>
 
       <label for="seconname">apellido: </label>
       <input id="seconname" type="text" name="surname" placeholder="apellido completo"> <br>
 
       <label for="email">correo: </label>
       <input id="email" type="email" name="email"><br>
+    </div>
 
-      <label for="cedula">cedula: </label>
-      <input id="cedula" type="number" name="cedula"><br>
+    <div>
+      <label for="texto">textarea: </label><br>
+      <textarea name="texto" id="texto" cols="30" rows="10" placeholder="acaba un texto" minlength="8"
+        maxlength="40"></textarea>
+    </div>
 
-      <div>
-        <label for="Masculino">Masculino</label>
-        <input type="checkbox" name="genero" id="Masculino"><br>
-        <label for="femenino">Femenino</label>
-        <input type="checkbox" name="genero" id="femenino"><br>
-        <label for="otro">otro</label>
-        <input type="checkbox" name="genero" id="otro"><br>
-      </div>
+    <div>
+      <select name="ciudades" id="ciudad">
+        <option value="Bucaramanga">Bucaramanga</option>
+        <option value="floridablanca">floridablanca</option>
+        <option value="piedecuesta">piedecuesta</option>
+        <option value="giron">giron</option>
+      </select>
+    </div>
+    <div>
+      <label for="fecha">fecha</label>
+      <input type="date">
+    </div>
+    <hr>
+    <div>
+      <input type="radio" name="genero" value="masculino"> masculino<br>
+      <input type="radio" name="genero" value="femenino"> femenino<br>
+      <input type="radio" name="genero" value="otro"> otro
+    </div>
+    <hr>
+    <div>
+      <label for="imagenes"></label>
+      <input type="file" id="imagenes" name="imagenes" accept="image/*" multiple>
+    </div>
 
-      <div>
-        <label for="texto">textarea: </label><br>
-        <textarea name="texto" id="texto" cols="30" rows="10" placeholder="acaba un texto" minlength="8"
-          maxlength="40"></textarea>
-      </div>
+    <div>
+      <label for="hamburguesa">hamburguesa</label>
+      <input type="checkbox" name="comida" id="hamburguesa" checked><br>
+      <label for="pizza">pizza</label>
+      <input type="checkbox" name="comida" id="pizza"><br>
+      <label for="otro">otro</label>
+      <input type="checkbox" name="comida" id="otro"><br>
+    </div>
 
-      <div>
-        <select name="ciudades" id="ciudad">
-          <option value="Bucaramanga">Bucaramanga</option>
-          <option value="floridablanca">floridablanca</option>
-          <option value="piedecuesta">piedecuesta</option>
-          <option value="giron">giron</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="edad">EDAD</label>
-        <input type="date">
-      </div> <br>
-      <button value="submit">enviar</button>
-
+    <button value="submit">enviar</button>
   </form>
 
 </body>
