@@ -32,6 +32,41 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quibusdam eos ea aliquam! Totam odit, adipisci
       eos deserunt quaerat autem. Possimus quaerat ducimus cumque quasi facilis cum id ut pariatur?</p>
   </main>
+  <hr>
+  <form>
+    <div>
+      <label for="name">nombre: </label>
+      <input id="name" type="text" name="name" placeholder="nombre completo" pattern="[A-Za-z]+{1-5}"><br>
+      <label for="telefono">telefono</label>
+      <input type="text" minlength="10" maxlength="12" name="telefono" required pattern="[0-9]+"><br>
+      <label for="email">correo: </label>
+      <input id="email" type="email" name="email" required><br>
+    </div>
+    <div>
+      <select name="ciudades" id="ciudad" required>
+        <option value="Bucaramanga">Bucaramanga</option>
+        <option value="floridablanca" selected>floridablanca</option>
+        <option value="piedecuesta">piedecuesta</option>
+        <option value="giron">giron</option>
+      </select>
+    </div>
+    <div>
+      <label for="nombre">nombre</label>
+      <input type="checkbox" name="chequeo" id="nombre" checked required><br>
+      <label for="numero">numero</label>
+      <input type="checkbox" name="chequeo" id="numero"><br>
+      <label for="email">email</label>
+      <input type="checkbox" name="chequeo" id="email"><br>
+    </div>
+    <div>
+      <label for="imagenes"></label>
+      <input type="file" id="imagenes" name="imagenes" accept=".png, .jpg" multiple required>
+    </div>
+    <button value="submit">enviar</button>
+  </form>
+
+
+  <hr>
   <form>
     <div>
       <label for="name">nombre: </label>
@@ -83,7 +118,6 @@
       <input type="checkbox" name="comida" id="otro"><br>
     </div>
 
-    <button value="submit">enviar</button>
   </form>
 
 </body>
